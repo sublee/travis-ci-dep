@@ -11,6 +11,6 @@ script:
 
 deploy:
 - provider: script
-  script: dep ensure -v
+  script: bash deploy.sh
   on:
     branch: master
