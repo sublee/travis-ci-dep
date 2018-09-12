@@ -7,7 +7,7 @@ install:
 - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 script:
-- true
+- dep ensure -v
 
 deploy:
 - provider: script

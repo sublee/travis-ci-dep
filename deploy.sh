@@ -1,12 +1,6 @@
 set -euo pipefail
 
+git clone https://github.com/sublee/travis-ci-dep.git
+cd travis-ci-dep
+
 dep ensure -v
-rm -rf vendor
-
-# while getopts 'x:' opt; do
-#   echo "$opt"
-# done
-# unset opt
-
-# dep ensure -v
-# rm -rf vendor
