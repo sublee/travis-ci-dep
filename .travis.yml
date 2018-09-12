@@ -7,11 +7,12 @@ install:
 - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 script:
+- env
 - dep ensure -v
 - rm -rf "$GOPATH/pkg/dep/sources"
 
 deploy:
 - provider: script
-  script: dep ensure -v
+  script: bash deploy.sh
   on:
     branch: master

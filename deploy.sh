@@ -1,5 +1,6 @@
 set -euo pipefail
 
-rm -rf "$GOPATH/pkg/dep/sources"
+env
+
 ls
 dep ensure -v
