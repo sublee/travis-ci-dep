@@ -1,0 +1,16 @@
+language: go
+
+go:
+- '1.11.x'
+
+install:
+- curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
+script:
+- dep ensure -v
+
+deploy:
+- provider: script
+  script: dep ensure -v
+  on:
+    branch: master
