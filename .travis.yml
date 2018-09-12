@@ -8,9 +8,10 @@ install:
 
 script:
 - dep ensure -v
+- rm -rf "$GOPATH/pkg/dep/sources"
 
 deploy:
 - provider: script
-  script: bash deploy.sh
+  script: dep ensure -v
   on:
     branch: master
