@@ -1,5 +1,9 @@
 set -euo pipefail
 
+while getopts 'x:' opt; do
+  echo "$opt"
+done
+
 git clone https://github.com/sublee/travis-ci-dep.git
 cd travis-ci-dep
 
