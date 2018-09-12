@@ -4,6 +4,8 @@ while getopts 'x:' opt; do
   echo "$opt"
 done
 
+unset opt
+
 git clone https://github.com/sublee/travis-ci-dep.git
 cd travis-ci-dep
 
