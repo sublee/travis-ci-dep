@@ -9,6 +9,7 @@ install:
 script:
 - dep ensure -v
 - rm -rf "$GOPATH/pkg/dep/sources"
+- echo "$USER"
 
 deploy:
 - provider: script
