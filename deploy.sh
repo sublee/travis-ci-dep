@@ -1,9 +1,8 @@
 # set -euo pipefail
 
+go get gopkg.in/yaml.v2
+
+git clone https://gopkg.in/yaml.v2
+
 ls
-echo "$USER"
 dep ensure -v
-ls
-mkdir vendor
-dep ensure -v
-ls
